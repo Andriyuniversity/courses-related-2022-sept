@@ -1,0 +1,4 @@
+.simpsons_base {
+    display: flex;
+    flex-wrap: wrap;
+}
