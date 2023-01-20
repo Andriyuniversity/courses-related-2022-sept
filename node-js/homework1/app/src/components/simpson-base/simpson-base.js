@@ -1,11 +1,16 @@
 import React from 'react'
 import './simpson-base.css'
 
-function Simpson(props) {
+function Simpson({name, image, about}) {
     return (
         <div className="simpson">
-            <img src={props.image} />
+            <div className={"simpson_base"}>
+                <h1>{name}</h1>
+                <img src={image} />
+                <span className={'simpson_base-about'}>{about}</span>
+            </div>
         </div>
+
     );
   }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css';
-import Simpson from './components/simpson-base/simpson-base';
+import Simpsons from "./components/Simpsons";
 
 function App() {
   return (
-      < Simpson image='https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png'/>
+      < Simpsons />
   );
 }
 
