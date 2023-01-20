@@ -1,5 +1,5 @@
 import React from 'react'
-import Simpson from './simpson-base/simpson-base'
+import Simpson from '../simpson-base'
 
 const Simpsons = () => {
     let name = 'Bart';
