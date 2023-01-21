@@ -11,7 +11,7 @@ const Simpsons = () => {
     let simpsonsArray = []
 
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         let simpson = 'simpson' + `${i}`
         console.log(simpson)
         simpsonsArray.push({
