@@ -6,7 +6,7 @@ function Simpson({name, image, about}) {
         <div className="simpson">
             <div className={"simpson_base"}>
                 <h1>{name}</h1>
-                <img src={image} />
+                <img src={image} alt='' />
                 <span className={'simpson_base-about'}>{about}</span>
             </div>
         </div>
