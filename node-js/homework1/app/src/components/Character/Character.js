@@ -9,14 +9,16 @@ const Character = () => {
             .then(value => value.json())
             .then(value => {
                 setUsers(value);
-                console.log(value)
             })
     }, []);
 
     return (
         <div>
             {
-                users.map(value => {value.id})
+                users.map((value) =>
+                    <div>
+                        {value.id}
+                    </div>)
             }
         </div>
     )
