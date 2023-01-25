@@ -8,20 +8,25 @@ const Character = () => {
         fetch(url)
             .then(value => value.json())
             .then(value => {
-                setUsers(value);
+                setUsers(value['results']);
             })
     }, []);
 
-    return (
-        <div>
-            {
-                users.map((value) =>
-                    <div>
-                        {value.id}
+        users.map(value => 
+        {
+            if (value['id'] < 7) {
+                return 
+                   (<div key={value.id}>
+                        {value['name']}
                     </div>)
-            }
-        </div>
-    )
+                }
+        }
+        )
+            
+}
+
+const formReturn = (props) => {
+    return ()
 }
 
 export default Character
