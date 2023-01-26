@@ -12,21 +12,19 @@ const Character = () => {
             })
     }, []);
 
-        users.map(value => 
-        {
-            if (value['id'] < 7) {
-                return 
-                   (<div key={value.id}>
-                        {value['name']}
-                    </div>)
-                }
-        }
-        )
+    return (
+        <div className='characters_base'>
+            {
+                users.slice(0,6).map((value) => 
+                <div className='character_base' key={value['id']}>
+                    {value['name']}
+                    {value['episode']}
+                </div>
+                )
+            }
+        </div>
+    )
             
-}
-
-const formReturn = (props) => {
-    return ()
 }
 
 export default Character
